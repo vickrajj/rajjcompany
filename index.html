@@ -1,0 +1,306 @@
+<html>
+<head>
+<title>Rajj company </title>
+<link rel="stylesheet"href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="="https://kit.fontawesome.com/a076d05399.js"></script> 
+<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootsrapcdn.com/bootsrap/4.2.1.js/bootstraap.main.min.js"></script>
+
+<link href="https://fonts.googleapics.com/css?family=roboto:400,700&disp"/>  
+<center>
+
+<div class="box">
+<i><b><h1>WELCOME ALL</h1></b></i>
+</div>  
+</center>
+
+
+<input type="text" class="box" placeholder="search">
+<div class="icon">
+<span>&#9906 </span>
+</div>
+<script src="script.js"></script>
+
+
+
+<nav>
+<label class="logo">DESIGNX</label>
+<ul>
+   <li><a class="active" href="vickrajj.html">HOME</a></li>
+   
+   <li><a href="SIGN UP.HTML">SIGN UP</a></li>
+   <li><a href="LOG IN.HTML">LOG IN</a></li>
+</ul>
+</nav>
+</head> 
+
+
+
+<body>
+<style>
+body{
+background-image:orange;
+}
+
+
+@keyframes zoom-out{
+	100%{
+		width:80%;
+	}
+}
+checkbox{
+	margin:0px;
+	width:20%;
+}
+checkbtn{
+	font-size:30px;
+	float:right;
+}
+
+</style>
+
+
+<div class="container" style="cursor: pointer">  
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2"> 
+		<div id="logerrors" style="text-align: center;" class="alert alert-danger"></div>
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Sign In</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"><a onclick="$('#loginbox').hide();$('#signupbox').hide();$('#forgotpass').show();">Forgot password?</a></div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+                            
+                        <form id="loginform" class="form-horizontal" role="form" action="accounts.php" method="POST">
+                                    
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="emailuser" placeholder="username or email">                                        
+                                    </div>
+                                
+                            <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="login-password" type="password" class="form-control" name="userpass" placeholder="password">
+                                    </div>
+                                    
+
+                                
+                            <div class="input-group">
+                                      <div class="checkbox">
+                                        <label>
+                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                        </label>
+                                      </div>
+                                    </div>
+
+
+                                <div style="margin-top:10px" class="form-group">
+
+                                    <div class="col-sm-12 controls">
+                                      <button id="btn-login" name="btlogin" class="btn btn-success">Login  </button>
+
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-md-12 control">
+                                        <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                            Dont have an account! 
+                                        <a id="globeregistry" >Sign Up Here</a>
+                                        </div>
+                                    </div>
+                                </div>    
+                         </form>     
+
+
+
+                        </div>                     
+                    </div>  
+        </div>
+        <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+		<div id="regerrors" style="text-align: center;" class="alert alert-danger"></div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Sign Up</div>
+                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink">Sign In</a></div>
+                        </div>  
+                        <div class="panel-body" >
+                            <form id="signupform" class="form-horizontal" role="form" action="../" method="POST">
+                                  
+                                <div class="form-group">
+                                    <label for="email" class="col-md-3 control-label">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="text" id="regemail" class="form-control" name="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <label for="firstname" class="col-md-3 control-label">First Name</label>
+                                    <div class="col-md-9">
+                                        <input id="regfname" type="text" class="form-control" name="firstname" placeholder="First Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname" class="col-md-3 control-label">Last Name</label>
+                                    <div class="col-md-9">
+                                        <input id="regsname" type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Password</label>
+                                    <div class="col-md-9">
+                                        <input id="regpass" type="password" class="form-control" name="passwd" placeholder="Password">
+                                    </div>
+                                </div>
+								
+								<div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Mobile Phone</label>
+                                    <div class="col-md-9">
+                                        <input id="moblcnt" type="text" class="form-control" name="mblcnt" placeholder="Mobile Contact">
+                                    </div>
+                                </div>\
+								
+								<div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Address</label>
+                                    <div class="col-md-9">
+                                        <input id="paddress" type="text" class="form-control" name="padres" placeholder="Physical Address">
+                                    </div>
+                                </div>
+								
+								<div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Postal Code</label>
+                                    <div class="col-md-9">
+                                        <input id="postcode" type="text" class="form-control" name="pcode" placeholder="Postal Code">
+                                    </div>
+                                </div>
+								
+								<div class="form-group">
+									
+									<label for="password" class="col-md-3 control-label">Country</label>
+                                    <div class="col-md-9">
+                                        <select name="country">
+											<?php include '../../neat_control/overall/countries.php' ?>
+										</select>
+                                    </div>	
+                                </div>
+
+                                <div class="form-group" style="text-align: center;">    
+									<button id="btn-signup" type="button" style="background-color: steelblue; color: white; padding: 5px; border-radius: 6px;">Sign Up</button>
+                                </div>                              
+                            </form>
+                         </div>
+                    </div>  
+                
+         </div> 
+		 <div id="forgotpass" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+		 <div id="frgterrors" style="text-align: center;" class="alert alert-danger"></div>
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title" id="globeregist">Sign Up</div>
+                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinli">Sign In</a></div>
+                        </div>  
+                        <div class="panel-body" >
+                            <form id="signupform" class="form-horizontal" role="form" action="../" method="POST">
+                                
+                                <div class="form-group">
+                                    <label for="email" class="col-md-3 control-label">Email</label>
+                                    <div class="col-md-9">
+                                        <input type="text" id="frgtemail" class="form-control" name="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+
+                                <div class="form-group" style="text-align: center;">    
+									<button id="btn-frgtpass" type="button" style="background-color: steelblue; color: white; padding: 5px; border-radius: 6px;">Request Password</button>
+								</div>                              
+                            </form>
+                         </div>
+                    </div>  
+                
+         </div> 	
+		 <div id="loginfomm" style="display:none;"></div>
+    </div>
+
+
+<div class="lambo">
+<img src="img\3.jpg">
+<span>Marceedise Bence</span>
+</div>
+<div class="lambo">
+<img src="img\4.jpg">
+<span>ferrarry</span>
+</div>
+<div class="lambo">
+<img src="img\5.jpg">
+<span>forester</span>
+</div>
+<div class="lambo">
+<img src="img\6.jpg">
+<span>landcruiser</span>
+</div>
+<div class="lambo">
+<img src="img\7.jpg">
+<span>jeep</span>
+</div>
+<div class="lambo">
+<img src="img\8.jpg">
+<span>subaru</span>
+</div>
+<div class="lambo">
+<img src="img\9.jpg">
+<span>prado</span>
+</div>
+<div class="lambo">
+<img src="img\10.jpg">
+<span>veey8</span>
+</div>
+
+
+<div id="container">
+<div clas="box"></div>
+</div>
+
+<script src="js/script.js" type="text/javascript"></script>
+
+<style>
+.footer{
+background-color:black;
+color:green;
+}
+</style>
+<div class="footer">
+
+    <div class="inner-footer">
+
+        <div class="footer-items">
+                <h2>QUICK LINKS</h2>
+                <div class="border"></div>
+                <ul>
+                    <a href="facebook.html"><li>Facebook</li></a></br>
+                    <a href="yutube.html"><li>Yutube</li></a></br>
+                    <a href="instagram.html"><li>Instagram</li></a></br>
+                    <a href="whatsap.html"><li>Whatsap</li></a></br>
+                </ul>
+            </div>
+
+            
+                <div class="footer-items">
+                        <h2>ABOUT US</h2>
+                        <div class="border"></div>
+                        <ul>
+						   <li><a href="About.HTML">ABOUT</a></li>
+                           <LI><i class="fa fa-marker" aria-hidden="true"></i> </ul>
+                    </div>
+        
+    
+
+    </div>
+</div>
+</body>
+</html>
